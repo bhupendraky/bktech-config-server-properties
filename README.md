@@ -1,0 +1,1 @@
+# bktech-config-server-properties
