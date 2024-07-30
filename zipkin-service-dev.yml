@@ -1,0 +1,14 @@
+armeria:
+  ports:
+    - port: 8073
+spring:
+  application:
+    name: ZIPKIN-SERVICE
+  config:
+    import: configserver:http://localhost:8070
+  profiles:
+    active:
+      - dev
+  main:
+    allow-bean-definition-overriding: true
+
